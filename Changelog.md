@@ -27,3 +27,25 @@ The second collage (Browse anime by genre section) is now a row of 4 posters: St
 Each poster links to its title page and has descriptive alt text. The hero posters load immediately; the second collage is lazy-loaded.
 The old aniorbit-hero-collage and featured-anime-collage images are no longer used on the homepage.
 
+--Part 3 — Functionality and SEO 
+No marks or feedback were released for Part 2, so there were no feedback corrections to carry over.
+
+-Added (JavaScript)
+js/theme.js, js/data.js, js/main.js, js/home.js, js/catalogue.js and js/forms.js (replacing the placeholder main.js).
+Mood Orbit recommender, top-rated picks, searchable/filterable/sortable catalogue, My Orbit watchlist, tabs, accordion, modal pop-ups, image lightbox, scroll-reveal animation and the animated hero orbit.
+Light/dark theme toggle with saved preference.
+
+-Added (forms)
+Replaced the contact form with a validated form (name, email, optional phone, message type, message) that compiles an email for the recipient in the code.
+Enquiry form now adapts to enquiry type, validates input and shows an AJAX-loaded response with cost and availability (data/enquiry-responses.json).
+Added (SEO, performance, security)
+
+Unique page titles and meta descriptions, Open Graph tags, JSON-LD, robots.txt, sitemap.xml, a custom 404.html and a skip-to-content link.
+Content Security Policy and referrer policy meta tags.
+
+-Changed
+Image files given descriptive names (for example u.webp became naruto-uzumaki.webp) and all page references updated.
+Google Fonts moved from a CSS @import to <link> tags with preconnect.
+Catalogue page: the two static catalogue images and static genre list were replaced by the dynamic catalogue; genre links became filter buttons.
+Stylesheet refactored to theme tokens (--surface, --heading, --link-text) so the same CSS powers both light and dark themes.
+Page headers gained a theme toggle button; <main> elements gained an id for the skip link.
