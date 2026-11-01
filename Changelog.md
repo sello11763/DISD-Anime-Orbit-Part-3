@@ -59,15 +59,15 @@ Each poster links to its title page and has descriptive alt text. The hero poste
 The old aniorbit-hero-collage and featured-anime-collage images are no longer used on the homepage.
 
 --References:
-AlternativeTo (n.d.) The best MyAnimeList alternatives: top anime/manga tracking apps like MyAnimeList. Available at: https://alternativeto.net/software/my-anime-list (Accessed: 26 October 2026).
+AlternativeTo (2026) The best MyAnimeList alternatives: top anime/manga tracking apps like MyAnimeList. Available at: https://alternativeto.net/software/my-anime-list (Accessed: 26 October 2026).
 
-Ahrefs (n.d.) Top anime-planet.com competitors and alternatives. Available at: https://ahrefs.com/websites/anime-planet.com/competitors (Accessed: 26 October 2026).
+Ahrefs (2026) Top anime-planet.com competitors and alternatives. Available at: https://ahrefs.com/websites/anime-planet.com/competitors (Accessed: 26 October 2026).
 
-Digital Citizen (n.d.) Best anime sites to watch and talk about your favorites. Available at: https://www.digitalcitizen.life/best-anime-sites-to-watch-and-talk-about-your-favorites/ (Accessed: 26 October 2026).
+Digital Citizen (2026) Best anime sites to watch and talk about your favorites. Available at: https://www.digitalcitizen.life/best-anime-sites-to-watch-and-talk-about-your-favorites/ (Accessed: 26 October 2026).
 
-Recoverit (n.d.) AniList alternatives. Available at: https://recoverit.wondershare.com/video-tips/anilist-alternatives.html (Accessed: 26 October 2026).
+Recoverit (2026) AniList alternatives. Available at: https://recoverit.wondershare.com/video-tips/anilist-alternatives.html (Accessed: 26 October 2026).
 
-Google Fonts (n.d.) Poppins and Roboto. Available at: https://fonts.google.com (Accessed: 26 October 2026).
+Google Fonts (2026) Poppins and Roboto. Available at: https://fonts.google.com (Accessed: 26 October 2026).
 
 Canva (2026) Canva: Visual Suite for everyone. Available at: https://www.canva.com/ (Accessed: 14 August 2026).
 
