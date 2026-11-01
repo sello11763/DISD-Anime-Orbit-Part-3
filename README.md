@@ -213,18 +213,6 @@ Home (index.html)
   all user text is inserted with `textContent` (never as raw HTML), a
   `referrer` policy is set, and HTTPS is provided by the hosting platform.
 
-### Deployment (GitHub Pages)
-1. Copy your images into `images/` using the exact file names listed in
-   `images/README.txt`.
-2. In VS Code use **Find in Files** (Ctrl+Shift+H) to replace
-   `https://YOUR-USERNAME.github.io/aniorbit/` with your real site address in
-   `robots.txt`, `sitemap.xml` and the `titles/` folder.
-3. Commit with descriptive messages, for example
-   `feat: add Mood Orbit recommender` and `fix: validate SA phone numbers`.
-4. Push to GitHub, then open **Settings > Pages**, choose the `main` branch and
-   the root folder, and save. The live address appears on that page.
-5. Submit the repository link and the live link on the LMS.
-
 ## Changelog
 
 ### Project kept to the brief (HTML, CSS, JavaScript) — 2026-10-27
@@ -426,33 +414,3 @@ Recoverit (n.d.) *AniList alternatives*. Available at: https://recoverit.wonders
 Google Fonts (n.d.) *Poppins* and *Roboto*. Available at: https://fonts.google.com (Accessed: 26 October 2026).
 
 IMDb (n.d.) *IMDb: ratings, reviews and where to watch the best movies and TV shows* (design inspiration for the chart and title pages). Available at: https://www.imdb.com (add your own access date).
-
-*Images (posters in `images/posters/`):* these promotional posters were supplied by the student.
-For each one, add the URL you downloaded it from, the access date, and the rights holder shown on
-the poster (for example, Bleach: Tite Kubo / Shueisha, TV TOKYO, dentsu, Pierrot; Spy x Family:
-Tatsuya Endo / Shueisha, SPY x FAMILY Project; Steins;Gate: 5pb. / Nitroplus SteinsGate Partners;
-KonoSuba 3: Natsume Akatsuki, Kurone Mishima / KADOKAWA / KONOSUBA3 Partners). Posters are used
-here for non-commercial, educational purposes only.
-
-| File | Title |
-|------|-------|
-| fmab.webp | Fullmetal Alchemist: Brotherhood |
-| attack-on-titan.webp | Attack on Titan |
-| steins-gate.webp | Steins;Gate |
-| cowboy-bebop.webp | Cowboy Bebop |
-| spirited-away.webp | Spirited Away |
-| your-name.webp | Your Name |
-| one-piece.webp | One Piece |
-| death-note.webp | Death Note |
-| demon-slayer.webp | Demon Slayer |
-| jujutsu-kaisen.webp | Jujutsu Kaisen |
-| mushishi.webp | Mushishi |
-| spy-x-family.webp | Spy x Family |
-| violet-evergarden.webp | Violet Evergarden |
-| naruto.webp | Naruto |
-| konosuba.webp | KonoSuba |
-| toradora.webp | Toradora! |
-| my-hero-academia.webp | My Hero Academia |
-| bleach.webp | Bleach |
-
-*Other images (logo, collages, character art, news images):* list each image, its creator, the licence and the URL here.
