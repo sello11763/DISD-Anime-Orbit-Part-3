@@ -69,8 +69,6 @@ Recoverit (n.d.) AniList alternatives. Available at: https://recoverit.wondersha
 
 Google Fonts (n.d.) Poppins and Roboto. Available at: https://fonts.google.com (Accessed: 26 October 2026).
 
-IMDb (n.d.) IMDb: ratings, reviews and where to watch the best movies and TV shows (design inspiration for the chart and title pages). Available at: https://www.imdb.com (add your own access date).
-
 Canva (2026) Canva: Visual Suite for everyone. Available at: https://www.canva.com/ (Accessed: 14 August 2026).
 
 Crunchyroll (2026) Crunchyroll: Watch popular anime, play games and shop online. Available at: https://www.crunchyroll.com/ (Accessed: 14 August 2026).
