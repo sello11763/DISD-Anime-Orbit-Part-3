@@ -49,3 +49,14 @@ Google Fonts moved from a CSS @import to <link> tags with preconnect.
 Catalogue page: the two static catalogue images and static genre list were replaced by the dynamic catalogue; genre links became filter buttons.
 Stylesheet refactored to theme tokens (--surface, --heading, --link-text) so the same CSS powers both light and dark themes.
 Page headers gained a theme toggle button; <main> elements gained an id for the skip link.
+
+--Part 2 — CSS styling and responsive design
+
+-Added
+Responsive images: a <picture> element with 480px/800px sources for the homepage hero, srcset and sizes on the three character images on anime.html, and loading="lazy" on below-the-fold images (news.html, anime.html).
+Part 2 Details section in this README.
+
+-Colour palette update 
+Replaced the deep purple + cyan palette with Deep Midnight Blue (#0b132b) for the header, nav, footer, and hero, paired with a green accent inspired by the requested "venomous green" (#68ff14).
+To avoid eye strain, the full-intensity green is now reserved for small details only (nav underline, hover states, focus rings), while a muted, deepened version (#3dbf2e) is used for larger surfaces like buttons — same hue family, softer at scale.
+Removed leftover purple-tinted undertones from the neutral gray tokens (borders, muted text) so they sit cleanly against the new navy theme.
