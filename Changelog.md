@@ -14,6 +14,15 @@ Renamed all image path references from Images/ (capitalised) to lowercase images
 Updated the site's background colour from a placeholder aquamarine to the brand palette from the project proposal (deep purple #241536 / #3D2265, orbit cyan #00C2CB), applied via the new stylesheet.
 Corrected a character name typo on anime.html: "Ichigo Kurasaki" → "Ichigo Kurosaki".
 
+--Part 2 — CSS styling and responsive design
+
+-Added
+Responsive images: a <picture> element with 480px/800px sources for the homepage hero, srcset and sizes on the three character images on anime.html, and loading="lazy" on below-the-fold images (news.html, anime.html).
+Part 2 Details section in this README.
+
+-Colour palette update 
+Replaced the deep purple + cyan palette with Deep Midnight Blue (#0b132b) for the header, nav, footer, and hero, paired with a green accent inspired by the requested "venomous green" (#68ff14).
+
 --Part 3 — Functionality and SEO 
 No marks or feedback were released for Part 2, so there were no feedback corrections to carry over.
 
@@ -26,9 +35,6 @@ Light/dark theme toggle with saved preference.
 Replaced the contact form with a validated form (name, email, optional phone, message type, message) that compiles an email for the recipient in the code.
 Enquiry form now adapts to enquiry type, validates input and shows an AJAX-loaded response with cost and availability (data/enquiry-responses.json).
 Added (SEO, performance, security)
-
-Unique page titles and meta descriptions, Open Graph tags, JSON-LD, robots.txt, sitemap.xml, a custom 404.html and a skip-to-content link.
-Content Security Policy and referrer policy meta tags.
 
 -Changed
 Image files given descriptive names (for example u.webp became naruto-uzumaki.webp) and all page references updated.
@@ -52,14 +58,20 @@ The second collage (Browse anime by genre section) is now a row of 4 posters: St
 Each poster links to its title page and has descriptive alt text. The hero posters load immediately; the second collage is lazy-loaded.
 The old aniorbit-hero-collage and featured-anime-collage images are no longer used on the homepage.
 
---Part 2 — CSS styling and responsive design
+--References:
+AlternativeTo (n.d.) The best MyAnimeList alternatives: top anime/manga tracking apps like MyAnimeList. Available at: https://alternativeto.net/software/my-anime-list (Accessed: 26 October 2026).
 
--Added
-Responsive images: a <picture> element with 480px/800px sources for the homepage hero, srcset and sizes on the three character images on anime.html, and loading="lazy" on below-the-fold images (news.html, anime.html).
-Part 2 Details section in this README.
+Ahrefs (n.d.) Top anime-planet.com competitors and alternatives. Available at: https://ahrefs.com/websites/anime-planet.com/competitors (Accessed: 26 October 2026).
 
--Colour palette update 
-Replaced the deep purple + cyan palette with Deep Midnight Blue (#0b132b) for the header, nav, footer, and hero, paired with a green accent inspired by the requested "venomous green" (#68ff14).
-To avoid eye strain, the full-intensity green is now reserved for small details only (nav underline, hover states, focus rings), while a muted, deepened version (#3dbf2e) is used for larger surfaces like buttons — same hue family, softer at scale.
-Removed leftover purple-tinted undertones from the neutral gray tokens (borders, muted text) so they sit cleanly against the new navy theme.
+Digital Citizen (n.d.) Best anime sites to watch and talk about your favorites. Available at: https://www.digitalcitizen.life/best-anime-sites-to-watch-and-talk-about-your-favorites/ (Accessed: 26 October 2026).
+
+Recoverit (n.d.) AniList alternatives. Available at: https://recoverit.wondershare.com/video-tips/anilist-alternatives.html (Accessed: 26 October 2026).
+
+Google Fonts (n.d.) Poppins and Roboto. Available at: https://fonts.google.com (Accessed: 26 October 2026).
+
+IMDb (n.d.) IMDb: ratings, reviews and where to watch the best movies and TV shows (design inspiration for the chart and title pages). Available at: https://www.imdb.com (add your own access date).
+
+
+
+
 
