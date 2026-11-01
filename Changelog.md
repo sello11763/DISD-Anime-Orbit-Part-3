@@ -71,7 +71,15 @@ Google Fonts (n.d.) Poppins and Roboto. Available at: https://fonts.google.com (
 
 IMDb (n.d.) IMDb: ratings, reviews and where to watch the best movies and TV shows (design inspiration for the chart and title pages). Available at: https://www.imdb.com (add your own access date).
 
+Canva (2026) Canva: Visual Suite for everyone. Available at: https://www.canva.com/ (Accessed: 14 August 2026).
 
+Crunchyroll (2026) Crunchyroll: Watch popular anime, play games and shop online. Available at: https://www.crunchyroll.com/ (Accessed: 14 August 2026).
+
+MyAnimeList (2026) MyAnimeList.net. Available at: https://myanimelist.net/ (Accessed: 14 August 2026).
+
+Pinterest (2026) Pinterest. Available at: https://www.pinterest.com/ (Accessed: 14 August 2026).
+
+World Wide Web Consortium (W3C) (2026) Web Content Accessibility Guidelines (WCAG). Available at: https://www.w3.org/WAI/standards-guidelines/wcag/ (Accessed: 14 August 2026).
 
 
 
