@@ -26,3 +26,4 @@ The first homepage collage (hero) is now a staggered grid of 6 posters: Attack o
 The second collage (Browse anime by genre section) is now a row of 4 posters: Steins;Gate, Death Note, Toradora! and KonoSuba.
 Each poster links to its title page and has descriptive alt text. The hero posters load immediately; the second collage is lazy-loaded.
 The old aniorbit-hero-collage and featured-anime-collage images are no longer used on the homepage.
+
