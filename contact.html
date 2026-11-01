@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact AniOrbit | Questions and Feedback</title>
+    <meta name="description" content="Contact the AniOrbit team with questions, feedback, problem reports or anime suggestions using our validated contact form.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0B132B">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AniOrbit">
+    <meta property="og:title" content="Contact AniOrbit | Questions and Feedback">
+    <meta property="og:description" content="Contact the AniOrbit team with questions, feedback, problem reports or anime suggestions using our validated contact form.">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/aniorbit-logo.jpg" alt="AniOrbit logo" class="brand-logo" width="42" height="42">
+                <span class="brand-name">AniOrbit</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <!-- This exact nav block is repeated on every page so links work across the whole site -->
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">☾</button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="hero" style="padding-block:3rem;">
+            <div class="container">
+                <p class="hero-eyebrow">We'd love to hear from you</p>
+                <h1 style="color:var(--white);">Contact us</h1>
+                <p class="lead" style="max-width:60ch;">Questions, feedback, or just want to say
+                    hi? Fill in the form and we will prepare an email to our team for you to send, or use the details on this page.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container form-layout">
+
+                <!-- Contact details -->
+                <div>
+                    <h2>Contact details</h2>
+                    <ul class="info-list">
+                        <li><strong>Email</strong> ST10511763@rcconnect.edu.za</li>
+                        <li><strong>Phone</strong> 011 555 0132</li>
+                        <li><strong>Hours</strong> Monday&ndash;Friday, 09:00&ndash;17:00 (SAST)</li>
+                    </ul>
+
+                    <h3 style="margin-top:1.75rem;">Follow us</h3>
+                    <div class="social-list">
+                        <a href="#">Instagram</a>
+                        <a href="#">X (Twitter)</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <form class="contact-form" id="contact-form" action="#" method="post" novalidate>
+                    <h2 style="margin-bottom:1.25rem;">Send us a message</h2>
+
+                    <div class="form-row">
+                        <label for="contact-name">Full name</label>
+                        <input type="text" id="contact-name" name="contact-name" required minlength="2" maxlength="60" autocomplete="name" aria-describedby="contact-name-error">
+                        <span class="field-error" id="contact-name-error" role="alert"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-email">Email address</label>
+                        <input type="email" id="contact-email" name="contact-email" required autocomplete="email" aria-describedby="contact-email-error">
+                        <span class="field-error" id="contact-email-error" role="alert"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-phone">Phone number (optional)</label>
+                        <input type="tel" id="contact-phone" name="contact-phone" autocomplete="tel" placeholder="011 555 0132" aria-describedby="contact-phone-error">
+                        <span class="field-error" id="contact-phone-error" role="alert"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-type">What is your message about?</label>
+                        <select id="contact-type" name="contact-type" required aria-describedby="contact-type-error">
+                            <option value="">Choose a message type</option>
+                            <option>General message</option>
+                            <option>Feedback on the site</option>
+                            <option>Report a problem</option>
+                            <option>Suggest an anime</option>
+                            <option>Press and media</option>
+                        </select>
+                        <span class="field-error" id="contact-type-error" role="alert"></span>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="6" required minlength="20" maxlength="1000" aria-describedby="contact-message-error contact-message-count"></textarea>
+                        <p class="char-count" id="contact-message-count">0 / 1000</p>
+                        <span class="field-error" id="contact-message-error" role="alert"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Prepare my email</button>
+
+                    <div class="result-panel" id="contact-result" hidden aria-live="polite"></div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav" aria-label="Footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">&copy; 2026 AniOrbit. Fictional organisation.</p>
+            <p class="footer-credit">ST10511763 #AnimeOrbit</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
+
+</body>
+</html>

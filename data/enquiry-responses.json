@@ -1,0 +1,15 @@
+{
+  "general": {
+    "reply": "We usually reply within 2 working days."
+  },
+  "contributor": {
+    "cost": "Free. Contributors are volunteers and are credited on every review.",
+    "availability": "4 reviewer spots are open this month.",
+    "reply": "Our team will send onboarding details within 2 working days."
+  },
+  "sponsor": {
+    "bronze": { "name": "Bronze", "price": "R1,500 per month", "available": 5, "perks": ["Logo in the site footer", "Mention in the monthly newsletter"] },
+    "silver": { "name": "Silver", "price": "R3,500 per month", "available": 3, "perks": ["Everything in Bronze", "One sponsored spotlight card in the catalogue"] },
+    "gold":   { "name": "Gold",   "price": "R7,500 per month", "available": 1, "perks": ["Everything in Silver", "Homepage banner placement", "Quarterly community Q&A feature"] }
+  }
+}

@@ -1,0 +1,6 @@
+# AniOrbit - allow all search engines to crawl the whole site
+User-agent: *
+Allow: /
+
+# Replace with your real deployed address before submitting
+Sitemap: https://YOUR-USERNAME.github.io/aniorbit/sitemap.xml

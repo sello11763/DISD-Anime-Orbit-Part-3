@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Recommendations and Reviews | AniOrbit</title>
+    <meta name="description" content="Find your next anime with AniOrbit: mood-based recommendations, anime reviews, character profiles and a searchable catalogue by genre, studio and year.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0B132B">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AniOrbit">
+    <meta property="og:title" content="Anime Recommendations and Reviews | AniOrbit">
+    <meta property="og:description" content="Find your next anime with AniOrbit: mood-based recommendations, anime reviews, character profiles and a searchable catalogue by genre, studio and year.">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AniOrbit",
+      "description": "An anime discovery site with mood-based recommendations, reviews, characters and a searchable catalogue.",
+      "inLanguage": "en"
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/aniorbit-logo.jpg" alt="AniOrbit logo" class="brand-logo" width="42" height="42">
+                <span class="brand-name">AniOrbit</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <!-- This exact nav block is repeated on every page so links work across the whole site -->
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">☾</button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Hero -->
+        <section class="hero">
+            <svg class="orbit-art" viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+                <circle class="ring" cx="260" cy="260" r="110"/>
+                <circle class="ring" cx="260" cy="260" r="180"/>
+                <circle class="ring" cx="260" cy="260" r="250"/>
+                <g class="spin"><circle class="planet" cx="260" cy="80" r="9"/><circle class="planet alt" cx="260" cy="150" r="5"/></g>
+                <g class="spin slow"><circle class="planet alt" cx="510" cy="260" r="7"/><circle class="planet" cx="80" cy="260" r="6"/></g>
+            </svg>
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Welcome to AniOrbit</p>
+                    <h1>Your orbit for anime discovery</h1>
+                    <p class="lead">AniOrbit brings anime titles, genres, characters, reviews, and
+                        recommendations together in one clear, easy-to-use place, so you spend
+                        less time searching and more time watching.</p>
+                    <div class="hero-actions">
+                        <a href="anime.html" class="btn btn-primary">Browse anime</a>
+                        <a href="about.html" class="btn btn-secondary">Learn about us</a>
+                    </div>
+                </div>
+                <div class="slideshow" role="region" aria-roledescription="carousel" aria-label="Featured anime posters">
+                    <div class="slides">
+                        <div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 6" data-title="Attack on Titan" data-meta="2013  •  Action, Mystery, Fantasy  •  ★ 9.0">
+                            <a href="titles/attack-on-titan.html"><picture><source media="(max-width: 600px)" srcset="images/posters/attack-on-titan-300.webp"><img src="images/posters/attack-on-titan.webp" width="600" height="900" alt="Attack on Titan poster"></picture></a>
+                        </div>
+                        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 6" data-title="Demon Slayer" data-meta="2019  •  Action, Fantasy  •  ★ 8.6">
+                            <a href="titles/demon-slayer.html"><picture><source media="(max-width: 600px)" srcset="images/posters/demon-slayer-300.webp"><img src="images/posters/demon-slayer.webp" width="600" height="900" alt="Demon Slayer poster"></picture></a>
+                        </div>
+                        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 6" data-title="Naruto" data-meta="2002  •  Action, Fantasy  •  ★ 8.3">
+                            <a href="titles/naruto.html"><picture><source media="(max-width: 600px)" srcset="images/posters/naruto-300.webp"><img src="images/posters/naruto.webp" width="600" height="900" alt="Naruto poster"></picture></a>
+                        </div>
+                        <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 6" data-title="Bleach" data-meta="2004  •  Action, Fantasy  •  ★ 8.0">
+                            <a href="titles/bleach.html"><picture><source media="(max-width: 600px)" srcset="images/posters/bleach-300.webp"><img src="images/posters/bleach.webp" width="600" height="900" loading="lazy" alt="Bleach poster"></picture></a>
+                        </div>
+                        <div class="slide" role="group" aria-roledescription="slide" aria-label="5 of 6" data-title="Spy x Family" data-meta="2022  •  Comedy, Action  •  ★ 8.5">
+                            <a href="titles/spy-x-family.html"><picture><source media="(max-width: 600px)" srcset="images/posters/spy-x-family-300.webp"><img src="images/posters/spy-x-family.webp" width="600" height="900" loading="lazy" alt="Spy x Family poster"></picture></a>
+                        </div>
+                        <div class="slide" role="group" aria-roledescription="slide" aria-label="6 of 6" data-title="My Hero Academia" data-meta="2016  •  Action  •  ★ 8.0">
+                            <a href="titles/my-hero-academia.html"><picture><source media="(max-width: 600px)" srcset="images/posters/my-hero-academia-300.webp"><img src="images/posters/my-hero-academia.webp" width="600" height="900" alt="My Hero Academia poster"></picture></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Mood Orbit: recommendation picker built by js/home.js -->
+        <section class="section section--tint" id="mood-orbit">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Not sure what to watch? Pick a mood</h2>
+                    <p>Tell Mood Orbit how you feel and get anime recommendations to match. New to anime?
+                        This is the easiest place to start.</p>
+                </div>
+                <div class="mood-picker" id="mood-picker" role="group" aria-label="Choose a mood"></div>
+                <p class="mood-status" id="mood-status" aria-live="polite">Choose a mood above to see your picks.</p>
+                <div class="anime-grid" id="mood-results"></div>
+                <noscript><p>Mood Orbit needs JavaScript. You can still <a href="anime.html">browse the full catalogue</a>.</p></noscript>
+            </div>
+        </section>
+
+        <!-- Top rated, loaded dynamically -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Top-rated anime on AniOrbit</h2>
+                    <p>The highest-scoring titles in our catalogue right now. Tap a card for details, or the
+                        heart to save it to My Orbit.</p>
+                </div>
+                <div class="anime-grid" id="featured-grid"></div>
+                <div class="link-row">
+                    <a href="anime.html">Browse the full anime catalogue</a>
+                    <a href="news.html">Read the latest anime news</a>
+                    <a href="about.html#faq">New to anime? Read the beginner FAQ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Built for anime fans -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Built for anime fans, by anime fans</h2>
+                    <p>AniOrbit exists to make anime discovery simple, organised, and enjoyable,
+                        whether you're a lifelong fan or just getting started.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">&#9733;</div>
+                        <h3>Discover</h3>
+                        <p>Browse anime by genre, studio, release year, and more, with everything
+                            organised in one place.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128214;</div>
+                        <h3>Read</h3>
+                        <p>Honest, spoiler-light reviews and character profiles to help you decide
+                            what's worth your watchlist.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128172;</div>
+                        <h3>Connect</h3>
+                        <p>Send us an enquiry, follow the latest news, or get in touch &mdash; AniOrbit
+                            is built around its community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Browse anime -->
+        <section class="section section--tint">
+            <div class="container split">
+                <div class="split-copy">
+                    <h2>Browse anime by genre, studio &amp; more</h2>
+                    <p>This is what AniOrbit offers: a growing catalogue of anime titles with
+                        summaries, ratings, genres, studios, and character details, so you can
+                        find exactly what you're in the mood to watch.</p>
+                    <a href="anime.html" class="btn btn-outline">Explore the catalogue</a>
+                </div>
+                <div class="split-media">
+                    <div class="collage collage-4" aria-label="Featured anime posters from the catalogue">
+                            <a href="titles/steins-gate.html"><picture><source media="(max-width: 600px)" srcset="images/posters/steins-gate-300.webp"><img src="images/posters/steins-gate.webp" width="600" height="900" loading="lazy" alt="Steins;Gate poster"></picture></a>
+                            <a href="titles/death-note.html"><picture><source media="(max-width: 600px)" srcset="images/posters/death-note-300.webp"><img src="images/posters/death-note.webp" width="600" height="900" loading="lazy" alt="Death Note poster"></picture></a>
+                            <a href="titles/toradora.html"><picture><source media="(max-width: 600px)" srcset="images/posters/toradora-300.webp"><img src="images/posters/toradora.webp" width="600" height="900" loading="lazy" alt="Toradora! poster"></picture></a>
+                            <a href="titles/konosuba.html"><picture><source media="(max-width: 600px)" srcset="images/posters/konosuba-300.webp"><img src="images/posters/konosuba.webp" width="600" height="900" loading="lazy" alt="KonoSuba poster"></picture></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest reviews & trending -->
+        <section class="section">
+            <div class="container split reverse">
+                <div class="split-copy">
+                    <h2>Latest reviews, trending this week</h2>
+                    <p>Honest, spoiler-light reviews to help you decide what's worth your
+                        watchlist, plus a snapshot of the anime our community is watching, rating,
+                        and talking about right now.</p>
+                    <a href="news.html" class="btn btn-outline">See what's trending</a>
+                </div>
+                <div class="split-media">
+                    <img src="images/reviews.jpg" alt="AniOrbit reviews and trending anime preview">
+                </div>
+            </div>
+        </section>
+
+        <!-- Anime news -->
+        <section class="section section--tint">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Anime news</h2>
+                    <p>Studio announces a follow-up season after strong viewership numbers.</p>
+                </div>
+                <article class="news-card">
+                    <img src="images/manga2.jpg" alt="Announcement artwork for a new manga adaptation">
+                    <div>
+                        <h3>Manga adaptation announced</h3>
+                        <p>A fan-favourite manga series is officially heading to anime.</p>
+                        <a href="news.html" class="btn btn-outline">Read more news</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Enquiry & contact CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-band">
+                    <div>
+                        <h2>Get involved with AniOrbit</h2>
+                        <p>Interested in contributing reviews, partnering with AniOrbit, or just
+                            want to say hi? We'd love to hear from you.</p>
+                    </div>
+                    <div class="cta-block">
+                        <h3 style="color:var(--white);">Send an enquiry</h3>
+                        <p>Contribute reviews, propose a partnership, or ask about sponsorship.</p>
+                        <a href="enquiry.html" class="btn btn-primary">Go to enquiry form</a>
+                    </div>
+                    <div class="cta-block">
+                        <h3 style="color:var(--white);">Contact us</h3>
+                        <p>Questions or feedback? Reach out using our contact details.</p>
+                        <a href="contact.html" class="btn btn-secondary">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav" aria-label="Footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">&copy; 2026 AniOrbit. Fictional organisation.</p>
+            <p class="footer-credit">ST10511763 #AnimeOrbit</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/slideshow.js" defer></script>
+
+</body>
+</html>

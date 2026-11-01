@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Anime by Genre and Studio | AniOrbit</title>
+    <meta name="description" content="Search and filter the AniOrbit anime catalogue by genre, studio and release year, save favourites to My Orbit, and meet the top anime characters.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0B132B">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AniOrbit">
+    <meta property="og:title" content="Browse Anime by Genre and Studio | AniOrbit">
+    <meta property="og:description" content="Search and filter the AniOrbit anime catalogue by genre, studio and release year, save favourites to My Orbit, and meet the top anime characters.">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/aniorbit-logo.jpg" alt="AniOrbit logo" class="brand-logo" width="42" height="42">
+                <span class="brand-name">AniOrbit</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <!-- This exact nav block is repeated on every page so links work across the whole site -->
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html" aria-current="page">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">☾</button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="hero" style="padding-block:3rem;">
+            <div class="container">
+                <p class="hero-eyebrow">Catalogue</p>
+                <h1 style="color:var(--white);">Browse anime: ranked, rated and ready to explore</h1>
+                <p class="lead" style="max-width:60ch;">Explore the top-rated and most popular anime,
+                    open a full title page with plot, characters and similar shows, and build your own
+                    watchlist and ratings.</p>
+            </div>
+        </section>
+
+        <!-- Top 10 rail (js/catalogue.js) -->
+        <section class="section" id="top10">
+            <div class="container">
+                <div class="section-head rail-head">
+                    <div>
+                        <h2>Top 10 on AniOrbit</h2>
+                        <p>The highest-scoring and most-rated titles in the catalogue. Tap a poster for the full title page.</p>
+                    </div>
+                    <div class="segmented" role="group" aria-label="Choose a chart">
+                        <button type="button" data-rail="rated" aria-pressed="true">Top rated</button>
+                        <button type="button" data-rail="popular" aria-pressed="false">Most popular</button>
+                    </div>
+                </div>
+                <div class="rail" id="top-rail"></div>
+            </div>
+        </section>
+
+        <!-- Browse by genre -->
+        <section class="section section--tint" id="genres">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Browse by genre</h2>
+                    <p>Jump straight into a genre and the chart below filters instantly.</p>
+                </div>
+                <div class="genre-tiles" id="genre-tiles">
+                    <a class="genre-tile" href="anime.html?genre=Action" data-genre="Action" style="--h:10"><strong>Action</strong><small></small></a>
+                    <a class="genre-tile" href="anime.html?genre=Fantasy" data-genre="Fantasy" style="--h:270"><strong>Fantasy</strong><small></small></a>
+                    <a class="genre-tile" href="anime.html?genre=Slice%20of%20Life" data-genre="Slice of Life" style="--h:150"><strong>Slice of Life</strong><small></small></a>
+                    <a class="genre-tile" href="anime.html?genre=Sci-Fi" data-genre="Sci-Fi" style="--h:205"><strong>Sci-Fi</strong><small></small></a>
+                    <a class="genre-tile" href="anime.html?genre=Mystery" data-genre="Mystery" style="--h:250"><strong>Mystery</strong><small></small></a>
+                    <a class="genre-tile" href="anime.html?genre=Romance" data-genre="Romance" style="--h:335"><strong>Romance</strong><small></small></a>
+                    <a class="genre-tile" href="anime.html?genre=Comedy" data-genre="Comedy" style="--h:45"><strong>Comedy</strong><small></small></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced search and chart -->
+        <section class="section" id="catalogue">
+            <div class="container">
+                <div class="section-head">
+                    <h2>The AniOrbit chart</h2>
+                    <p>Search every title, narrow it down with filters, and switch between list and poster views.
+                        Rate shows you love and keep a watchlist in My Orbit.</p>
+                </div>
+
+                <div class="tablist" role="tablist" aria-label="Catalogue views">
+                    <button class="tab" role="tab" id="tab-all" data-panel="all" aria-selected="true" aria-controls="panel-all">All anime</button>
+                    <button class="tab" role="tab" id="tab-mine" data-panel="mine" aria-selected="false" aria-controls="panel-mine" tabindex="-1">My Orbit (0)</button>
+                    <button class="tab" role="tab" id="tab-rated" data-panel="rated" aria-selected="false" aria-controls="panel-rated" tabindex="-1">My ratings (0)</button>
+                </div>
+
+                <div role="tabpanel" id="panel-all" aria-labelledby="tab-all">
+                    <div class="filter-panel">
+                        <div class="filter-field filter-wide">
+                            <label for="catalogue-search">Search</label>
+                            <input type="search" id="catalogue-search" placeholder="Title, studio, character, genre or year" autocomplete="off">
+                        </div>
+                        <div class="filter-field">
+                            <label for="filter-type">Type</label>
+                            <select id="filter-type"><option value="All">All types</option><option>TV series</option><option>Film</option></select>
+                        </div>
+                        <div class="filter-field">
+                            <label for="filter-min">Minimum score</label>
+                            <select id="filter-min"><option value="0">Any score</option><option value="7">7.0 and up</option><option value="8">8.0 and up</option><option value="8.5">8.5 and up</option><option value="9">9.0 and up</option></select>
+                        </div>
+                        <div class="filter-field">
+                            <label for="filter-from">Released from</label>
+                            <input type="number" id="filter-from" min="1960" max="2030" placeholder="1998">
+                        </div>
+                        <div class="filter-field">
+                            <label for="filter-to">Released to</label>
+                            <input type="number" id="filter-to" min="1960" max="2030" placeholder="2022">
+                        </div>
+                        <div class="filter-field">
+                            <label for="catalogue-sort">Sort by</label>
+                            <select id="catalogue-sort">
+                                <option value="rank">Rank (top rated)</option>
+                                <option value="popular">Most popular</option>
+                                <option value="newest">Newest first</option>
+                                <option value="oldest">Oldest first</option>
+                                <option value="title">Title A to Z</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="chip-list" role="group" aria-label="Filter by genre">
+                        <button type="button" class="chip" data-genre="All" aria-pressed="true">All</button>
+                        <button type="button" class="chip" data-genre="Action" aria-pressed="false">Action</button>
+                        <button type="button" class="chip" data-genre="Fantasy" aria-pressed="false">Fantasy</button>
+                        <button type="button" class="chip" data-genre="Slice of Life" aria-pressed="false">Slice of Life</button>
+                        <button type="button" class="chip" data-genre="Sci-Fi" aria-pressed="false">Sci-Fi</button>
+                        <button type="button" class="chip" data-genre="Mystery" aria-pressed="false">Mystery</button>
+                        <button type="button" class="chip" data-genre="Romance" aria-pressed="false">Romance</button>
+                        <button type="button" class="chip" data-genre="Comedy" aria-pressed="false">Comedy</button>
+                    </div>
+
+                    <div class="results-bar">
+                        <p class="results-count" id="results-count" aria-live="polite"></p>
+                        <div class="results-tools">
+                            <button type="button" class="link-btn" id="clear-filters">Clear filters</button>
+                            <div class="segmented" role="group" aria-label="Choose a view">
+                                <button type="button" data-view="list" aria-pressed="true">List</button>
+                                <button type="button" data-view="grid" aria-pressed="false">Posters</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-list" id="catalogue-grid"></div>
+                </div>
+
+                <div role="tabpanel" id="panel-mine" aria-labelledby="tab-mine" hidden>
+                    <div class="chart-list" id="mine-grid"></div>
+                </div>
+                <div role="tabpanel" id="panel-rated" aria-labelledby="tab-rated" hidden>
+                    <div class="chart-list" id="rated-grid"></div>
+                </div>
+
+                <noscript><p>The chart needs JavaScript. Please enable it to search and filter.</p></noscript>
+            </div>
+        </section>
+
+        <!-- Character spotlight -->
+        <section class="section section--tint" id="characters">
+            <div class="container">
+                <div class="section-head">
+                    <h2>The top three anime characters</h2>
+                    <p>Character profiles are one of AniOrbit's core features: background,
+                        abilities, relationships, and the series they appear in.</p>
+                </div>
+
+                <div class="character-grid">
+                    <article class="character-card">
+                        <img src="images/naruto-uzumaki.webp"
+                             loading="lazy" alt="Naruto Uzumaki character art">
+                        <div class="character-body">
+                            <span class="character-tag tag-naruto">Naruto</span>
+                            <h3>Naruto Uzumaki</h3>
+                            <p class="appears-in">Appears in: Naruto, Naruto: Shippuden and Boruto</p>
+                            <p>A loud, energetic ninja from the Hidden Leaf Village. He starts as
+                                an outcast with a sealed monster inside him and dreams of becoming
+                                the Hokage (the leader of his village).</p>
+                        </div>
+                    </article>
+
+                    <article class="character-card">
+                        <img src="images/monkey-d-luffy.webp"
+                             loading="lazy" alt="Monkey D Luffy character art">
+                        <div class="character-body">
+                            <span class="character-tag tag-luffy">One Piece</span>
+                            <h3>Monkey D Luffy</h3>
+                            <p class="appears-in">Appears in: One Piece</p>
+                            <p>A young pirate who wants to find the legendary treasure and become
+                                the King of the Pirates.</p>
+                        </div>
+                    </article>
+
+                    <article class="character-card">
+                        <img src="images/ichigo-kurosaki.webp"
+                             loading="lazy" alt="Ichigo Kurosaki character art">
+                        <div class="character-body">
+                            <span class="character-tag tag-ichigo">Bleach</span>
+                            <h3>Ichigo Kurosaki</h3>
+                            <p class="appears-in">Appears in: Bleach</p>
+                            <p>A teenager with bright orange hair who can see ghosts. He gets the
+                                powers of a Soul Reaper from Rukia Kuchiki and fights evil spirits
+                                called Hollows to protect his friends and family.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="link-row">
+                    <a href="news.html">See what is trending this week</a>
+                    <a href="index.html#mood-orbit">Not sure what to watch? Try Mood Orbit</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav" aria-label="Footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">&copy; 2026 AniOrbit. Fictional organisation.</p>
+            <p class="footer-credit">ST10511763 #AnimeOrbit</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/catalogue.js" defer></script>
+
+</body>
+</html>

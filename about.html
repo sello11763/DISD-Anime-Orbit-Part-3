@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AniOrbit | Anime Discovery for Every Fan</title>
+    <meta name="description" content="Learn how AniOrbit helps new and lifelong anime fans discover shows, with our story, mission, vision and a beginner-friendly anime FAQ.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0B132B">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AniOrbit">
+    <meta property="og:title" content="About AniOrbit | Anime Discovery for Every Fan">
+    <meta property="og:description" content="Learn how AniOrbit helps new and lifelong anime fans discover shows, with our story, mission, vision and a beginner-friendly anime FAQ.">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/aniorbit-logo.jpg" alt="AniOrbit logo" class="brand-logo" width="42" height="42">
+                <span class="brand-name">AniOrbit</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <!-- This exact nav block is repeated on every page so links work across the whole site -->
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">☾</button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="hero" style="padding-block:3rem;">
+            <div class="container">
+                <p class="hero-eyebrow">About us</p>
+                <h1 style="color:var(--white);">Built for anime fans, by anime fans</h1>
+                <p class="lead" style="max-width:60ch;">AniOrbit exists to make anime discovery
+                    simple, organised, and enjoyable, whether you're a lifelong fan or just
+                    getting started.</p>
+            </div>
+        </section>
+
+        <!-- Organisation history -->
+        <section class="section">
+            <div class="container split">
+                <div class="split-copy">
+                    <h2>Our history</h2>
+                    <p>AniOrbit was founded as a response to the growing global popularity of
+                        anime. AniOrbit was created to solve this by bringing essential anime
+                        information &mdash; titles, reviews, characters, genres, and
+                        recommendations &mdash; into one clear, well-structured, and visually
+                        appealing platform.</p>
+                    <p>We started with a focused set of features: news, character profiles,
+                        reviews, recommendations, and anime summaries. As the platform grows, we
+                        plan to introduce discussion boards, community features, and personalised
+                        recommendations.</p>
+                </div>
+                <div class="split-media">
+                    <img src="images/collage.webp" alt="Collage representing AniOrbit's growing anime catalogue">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission and vision -->
+        <section class="section section--tint">
+            <div class="container">
+                <div class="feature-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="feature-card">
+                        <h2 style="font-size:1.25rem;">Mission</h2>
+                        <p>To provide accurate, engaging, and easily accessible anime content so
+                            fans can learn about, understand, and enjoy anime with confidence.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h2 style="font-size:1.25rem;">Vision</h2>
+                        <p>To grow into a trusted, go-to online anime knowledge resource, offering
+                            fans worldwide a fun, educational, and easy-to-use experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beginner FAQ (accordion) -->
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-head">
+                    <h2>New to anime? Start here</h2>
+                    <p>Quick answers to the questions newcomers ask us most.</p>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3><button class="accordion-trigger" id="faq-t1" aria-expanded="false" aria-controls="faq-p1">Where should a complete beginner start?</button></h3>
+                        <div class="accordion-panel" id="faq-p1" role="region" aria-labelledby="faq-t1" hidden>
+                            <p>Pick a mood on our <a href="index.html#mood-orbit">Mood Orbit</a> and let it suggest a few shows.
+                                Short series and films such as Spirited Away or Cowboy Bebop are easy first steps because you can
+                                finish them quickly.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3><button class="accordion-trigger" id="faq-t2" aria-expanded="false" aria-controls="faq-p2">What does sub and dub mean?</button></h3>
+                        <div class="accordion-panel" id="faq-p2" role="region" aria-labelledby="faq-t2" hidden>
+                            <p>A sub keeps the original Japanese voices and adds subtitles. A dub replaces the voices with
+                                actors speaking another language. Neither is better, so choose what you enjoy.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3><button class="accordion-trigger" id="faq-t3" aria-expanded="false" aria-controls="faq-p3">How do I find anime in a certain genre?</button></h3>
+                        <div class="accordion-panel" id="faq-p3" role="region" aria-labelledby="faq-t3" hidden>
+                            <p>Open the <a href="anime.html">Browse Anime</a> page, tap a genre button and the catalogue filters
+                                instantly. You can also search by title, studio or year.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3><button class="accordion-trigger" id="faq-t4" aria-expanded="false" aria-controls="faq-p4">What is the Orbit score?</button></h3>
+                        <div class="accordion-panel" id="faq-p4" role="region" aria-labelledby="faq-t4" hidden>
+                            <p>It is the AniOrbit community score out of 10. AniOrbit is a fictional organisation built for an
+                                academic project, so these scores are illustrative rather than real-world ratings.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3><button class="accordion-trigger" id="faq-t5" aria-expanded="false" aria-controls="faq-p5">Can I watch anime on AniOrbit?</button></h3>
+                        <div class="accordion-panel" id="faq-p5" role="region" aria-labelledby="faq-t5" hidden>
+                            <p>No. AniOrbit helps you discover and learn about anime. To watch, please use a licensed streaming
+                                service so the creators get paid. Want to help us grow? <a href="enquiry.html">Become a contributor</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target audience -->
+        <section class="section section--tint">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Our audience</h2>
+                    <p>AniOrbit is built primarily for teenagers and young adults aged
+                        15&ndash;35, though anime lovers of every age are welcome. This includes:</p>
+                </div>
+                <div class="chip-list">
+                    <span class="chip">Anime enthusiasts looking for a central resource</span>
+                    <span class="chip">Newcomers needing recommendations</span>
+                    <span class="chip">Manga readers curious about adaptations</span>
+                    <span class="chip">Fans researching new releases</span>
+                    <span class="chip">Viewers wanting deeper character insight</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav" aria-label="Footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">&copy; 2026 AniOrbit. Fictional organisation.</p>
+            <p class="footer-credit">ST10511763 #AnimeOrbit</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+
+</body>
+</html>
