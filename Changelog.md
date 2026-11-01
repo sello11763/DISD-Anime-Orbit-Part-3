@@ -1,31 +1,18 @@
--Removed
-The tools/ folder (a Python image script and a Node.js page generator). The brief only asks for HTML, CSS and JavaScript, so the project no longer needs Python or Node.js. The 18 pages in titles/ and sitemap.xml stay as they were; to add a title, add it to js/data.js, copy an existing file in titles/, and add the new address to sitemap.xml.
+--Part 1 additions and corrections
 
 -Added
-images/posters/*-300.webp: 13 small copies of the posters (300 px wide), used with srcset/sizes and <picture> so phones download smaller images. posterW in js/data.js records which titles have one.
+External stylesheet (css/style.css) linked from every page, replacing all inline style attributes.
+js/main.js placeholder, reserved for Part 3 functionality work.
+Horizontal navigation menu with a pure-CSS mobile toggle (no JavaScript dependency), consistent across all six pages.
+<meta charset="UTF-8">, <meta name="viewport">, and a meta description added to every page (previously missing on all of them).
+Descriptive alt text on every image site-wide (previously missing on index.html, about.html, news.html, contact.html, and enquiry.html).
+A contact form (name, email, subject, message) on contact.html, which previously had contact details only.
+images/README.txt documenting the folder rename and listing every image filename the site expects.
 
 -Changed
-Removed the srcset on the three character images in anime.html, because it pointed at resized copies that only the removed script created.
-Image names are now renamed by hand; the list is in images/README.txt.
-
---Homepage hero slideshow 
--Changed
-The first homepage collage (hero) is now a poster slideshow. The centre poster is the active slide, with the previous and next posters peeking in at the sides. It uses the same six posters: Attack on Titan, Demon Slayer, Naruto, Bleach, Spy x Family and My Hero Academia. The second collage (four posters in the genre section) is unchanged.
-
--Added
-js/slideshow.js: previous/next buttons, clickable dots, keyboard arrows, swipe on touch screens, a caption with a "View details" link, and autoplay every 4.5 seconds.
-Accessibility: the slideshow is a labelled carousel region, inactive slides are hidden from screen readers and the tab order, autoplay pauses on hover and keyboard focus and has a pause/play button, and visitors who set "reduce motion" in their system get no autoplay at all.
-Without JavaScript the six posters appear as a simple grid instead.
-
--Removed
-The static 6-poster collage styles (collage-6, hero-collage).
-Homepage poster collages — 2026-10-27
-
--Changed
-The first homepage collage (hero) is now a staggered grid of 6 posters: Attack on Titan, Demon Slayer, Naruto, Bleach, Spy x Family and My Hero Academia.
-The second collage (Browse anime by genre section) is now a row of 4 posters: Steins;Gate, Death Note, Toradora! and KonoSuba.
-Each poster links to its title page and has descriptive alt text. The hero posters load immediately; the second collage is lazy-loaded.
-The old aniorbit-hero-collage and featured-anime-collage images are no longer used on the homepage.
+Renamed all image path references from Images/ (capitalised) to lowercase images/, since folder names are case-sensitive on GitHub Pages and most Linux-based hosts and the old paths would have broken on deployment.
+Updated the site's background colour from a placeholder aquamarine to the brand palette from the project proposal (deep purple #241536 / #3D2265, orbit cyan #00C2CB), applied via the new stylesheet.
+Corrected a character name typo on anime.html: "Ichigo Kurasaki" → "Ichigo Kurosaki".
 
 --Part 3 — Functionality and SEO 
 No marks or feedback were released for Part 2, so there were no feedback corrections to carry over.
@@ -50,6 +37,21 @@ Catalogue page: the two static catalogue images and static genre list were repla
 Stylesheet refactored to theme tokens (--surface, --heading, --link-text) so the same CSS powers both light and dark themes.
 Page headers gained a theme toggle button; <main> elements gained an id for the skip link.
 
+-Added
+js/slideshow.js: previous/next buttons, clickable dots, keyboard arrows, swipe on touch screens, a caption with a "View details" link, and autoplay every 4.5 seconds.
+Accessibility: the slideshow is a labelled carousel region, inactive slides are hidden from screen readers and the tab order, autoplay pauses on hover and keyboard focus and has a pause/play button, and visitors who set "reduce motion" in their system get no autoplay at all.
+Without JavaScript the six posters appear as a simple grid instead.
+
+-Removed
+The static 6-poster collage styles (collage-6, hero-collage).
+Homepage poster collages — 2026-10-27
+
+-Changed
+The first homepage collage (hero) is now a staggered grid of 6 posters: Attack on Titan, Demon Slayer, Naruto, Bleach, Spy x Family and My Hero Academia.
+The second collage (Browse anime by genre section) is now a row of 4 posters: Steins;Gate, Death Note, Toradora! and KonoSuba.
+Each poster links to its title page and has descriptive alt text. The hero posters load immediately; the second collage is lazy-loaded.
+The old aniorbit-hero-collage and featured-anime-collage images are no longer used on the homepage.
+
 --Part 2 — CSS styling and responsive design
 
 -Added
@@ -60,3 +62,4 @@ Part 2 Details section in this README.
 Replaced the deep purple + cyan palette with Deep Midnight Blue (#0b132b) for the header, nav, footer, and hero, paired with a green accent inspired by the requested "venomous green" (#68ff14).
 To avoid eye strain, the full-intensity green is now reserved for small details only (nav underline, hover states, focus rings), while a muted, deepened version (#3dbf2e) is used for larger surfaces like buttons — same hue family, softer at scale.
 Removed leftover purple-tinted undertones from the neutral gray tokens (borders, muted text) so they sit cleanly against the new navy theme.
+
