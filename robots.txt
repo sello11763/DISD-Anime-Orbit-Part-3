@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Replace with your real deployed address before submitting
-Sitemap: https://YOUR-USERNAME.github.io/aniorbit/sitemap.xml
+Sitemap: https://animeorbit-11763.netlify.app/aniorbit/sitemap.xml
