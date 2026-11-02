@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace YOUR-USERNAME/aniorbit with your real deployed address -->
+<!-- Replace YOUR-USERNAME with your real deployed address -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/</loc>
+    <loc>https://animeorbit-11763.netlify.app/index.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/anime.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/anime.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/about.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/about.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/news.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/news.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/enquiry.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/enquiry.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/contact.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/contact.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/naruto.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/naruto.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/one-piece.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/one-piece.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/bleach.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/bleach.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/fmab.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/fmab.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/death-note.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/death-note.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/attack-on-titan.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/attack-on-titan.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/your-name.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/your-name.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/spy-x-family.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/spy-x-family.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/demon-slayer.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/demon-slayer.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/my-hero-academia.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/my-hero-academia.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/jujutsu-kaisen.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/jujutsu-kaisen.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/cowboy-bebop.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/cowboy-bebop.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/steins-gate.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/steins-gate.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/violet-evergarden.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/violet-evergarden.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/spirited-away.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/spirited-away.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/mushishi.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/mushishi.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/konosuba.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/konosuba.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://animeorbit-11763.netlify.app/aniorbit/titles/toradora.html</loc>
+    <loc>https://animeorbit-11763.netlify.app/titles/toradora.html</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
